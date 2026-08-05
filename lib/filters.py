@@ -1,4 +1,5 @@
 # This module contains functions for filtering student data.
+# A filter keeps only the items that match a condition.
 
 def filter_students_by_major(student_list, major):
     """
@@ -7,4 +8,5 @@ def filter_students_by_major(student_list, major):
     - Check if a student's major matches the given major (case insensitive).
     - Return a new list containing only students that match.
     """
-    pass
+    # Build a new list with only the students whose major matches.
+    return [student for student in student_list if student["major"].lower() == major.lower()]
